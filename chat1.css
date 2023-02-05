@@ -1,11 +1,12 @@
 .wraper {
     margin: 4px 0px;
     width: 100%;
-    height: 96vh;
-    overflow-x: auto;
+    height: auto;
+    overflow:hidden ;
     display: flex;
     flex-direction: row;
     position: relative;
+    padding: 16px 0;
     /* justify-content: space-around; */
     align-items: center;
     gap: 16px;
@@ -42,7 +43,24 @@
 .wraper .list:nth-child(3){
     height: auto;
 }
-
+::-webkit-scrollbar {
+    height: 8px;
+}
+::-webkit-scrollbar {
+    height: 4px;
+    /* if you set the heigth to zero in normal view, you won't see the scroll bar but you can move
+    by pressing shift and scroll using your mouse */
+    /* height: 0; */
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2.5px #21caf5;
+    border-radius: 8px;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #21caf5;
+    border-radius: 16px;
+}
 @media screen and (max-width: 700px) {
 
     .profile {

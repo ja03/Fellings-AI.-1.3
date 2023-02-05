@@ -72,20 +72,25 @@ button {
     margin-right: 4em;
 }
 .part1-chat{
-margin: 48px;
+margin: 48px 0;
 display: flex;
 align-items: center;
-height: 96vh;
+height: auto;
+padding:48px ;
+border: 1px solid transparent;
+border-radius: 16% 0 16% 0;
+background-color: var(--color4);
 }
-.chat-events h3:nth-child(1){
+.chat-events > h3{
     font-size: 2em;
     margin: 48px;
     font-weight: 400;
 }
 .event_type-name{
     flex:0 0 50% ;
-    font-size: var(--font-size2);
+    font-size: 2.5em;
     text-transform: capitalize;
+    text-align: center;
 }
 .event_type-name span{
     text-decoration: underline;
@@ -104,7 +109,7 @@ height: 96vh;
     display: block;
     height: 200px;
     width: 400px;
-    border-radius: 50% 10% / 40% 30%;
+    border-radius: 16% 0 16% 0;
 
 }
 
@@ -119,7 +124,7 @@ background-image: url('./media/img1.png');
     padding: 48px;
     background-color: #fff;
     color: var(--color4); 
-    height: 97vh;
+    height: auto;
 }
 .event-description{
     width: 75%;
@@ -208,7 +213,7 @@ background-image: url('./media/img1.png');
     .part1-chat{
         flex-direction: column;
         font-size: var(--font-size3);
-
+        
     }
     .event-images{
         align-items: flex-start;
